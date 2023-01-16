@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="heber"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-16 01:33:24 "/>
+        <attribute name="created" value="aGViZXI7SEVCRVJUOzIwMjMtMDEtMTY7IjAxOjE5OjAwICI7MjE0MQ=="/>
+        <attribute name="edited" value="aGViZXI7SEVCRVJUOzIwMjMtMDEtMTY7IjAxOjMzOjI0ICI7MjsyMjUy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <while expression="nota1&lt;0||nota1&gt;10">
+                <input variable="nota1"/>
+            </while>
+            <input variable="nota2"/>
+            <while expression="nota2&lt;0||nota2&gt;10">
+                <input variable="nota2"/>
+            </while>
+            <input variable="nota3"/>
+            <while expression="nota3&lt;0||nota3&gt;10">
+                <input variable="nota3"/>
+            </while>
+            <input variable="nota4"/>
+            <while expression="nota4&lt;0||nota4&gt;10">
+                <input variable="nota4"/>
+            </while>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media&gt;6">
+                <then>
+                    <output expression="&quot;Aluno aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Aluno reprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
