@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="heber"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-16 04:18:04 "/>
+        <attribute name="created" value="aGViZXI7SEVCRVJUOzIwMjMtMDEtMTY7IjAxOjE5OjAwICI7MjE0MQ=="/>
+        <attribute name="edited" value="aGViZXI7SEVCRVJUOzIwMjMtMDEtMTY7IjA0OjE4OjA0ICI7NzsyMjYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media, faltas" type="Real" array="False" size=""/>
+            <declare name="nome" type="String" array="False" size=""/>
+            <output expression="&quot;Nome do aluno: &quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Insira a nota 1&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <while expression="nota1&lt;0||nota1&gt;10">
+                <input variable="nota1"/>
+            </while>
+            <output expression="&quot;Insira a nota 2&quot;" newline="True"/>
+            <input variable="nota2"/>
+            <while expression="nota2&lt;0||nota2&gt;10">
+                <input variable="nota2"/>
+            </while>
+            <output expression="&quot;Insira a nota 3&quot;" newline="True"/>
+            <input variable="nota3"/>
+            <while expression="nota3&lt;0||nota3&gt;10">
+                <input variable="nota3"/>
+            </while>
+            <output expression="&quot;Insira a nota 4&quot;" newline="True"/>
+            <input variable="nota4"/>
+            <while expression="nota4&lt;0||nota4&gt;10">
+                <input variable="nota4"/>
+            </while>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="media" newline="True"/>
+            <output expression="&quot;Insira o n&#250;mero de faltas&quot;" newline="True"/>
+            <input variable="faltas"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <if expression="faltas&gt;50">
+                        <then>
+                            <output expression="&quot;Aluno &quot;&amp;nome&amp;&quot; est&#225; reprovado&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Aluno &quot;&amp;nome&amp;&quot; est&#225; aprovado&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Aluno &quot;&amp;nome&amp;&quot; est&#225; reprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

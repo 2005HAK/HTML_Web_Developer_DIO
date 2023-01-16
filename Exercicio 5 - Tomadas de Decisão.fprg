@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="heber"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-16 03:46:13 "/>
+        <attribute name="created" value="aGViZXI7SEVCRVJUOzIwMjMtMDEtMTY7IjAzOjM3OjE4ICI7MjE1Mg=="/>
+        <attribute name="edited" value="aGViZXI7SEVCRVJUOzIwMjMtMDEtMTY7IjAzOjQ2OjEzICI7MTsyMjU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cliente" type="String" array="False" size=""/>
+            <declare name="cartao" type="Boolean" array="False" size=""/>
+            <declare name="numero" type="String" array="False" size=""/>
+            <output expression="&quot;Insira o nome do cliente&quot;" newline="True"/>
+            <input variable="cliente"/>
+            <output expression="&quot;Possui cart&#227;o? (true or false)&quot;" newline="True"/>
+            <input variable="cartao"/>
+            <if expression="cartao==true">
+                <then>
+                    <output expression="&quot;Insira o n&#250;mero do cart&#227;o&quot;" newline="True"/>
+                    <input variable="numero"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente a loja somente aceita compras via cart&#227;o&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

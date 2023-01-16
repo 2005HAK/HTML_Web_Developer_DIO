@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="heber"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-16 04:35:58 "/>
+        <attribute name="created" value="aGViZXI7SEVCRVJUOzIwMjMtMDEtMTY7IjA0OjI3OjI0ICI7MjE0OQ=="/>
+        <attribute name="edited" value="aGViZXI7SEVCRVJUOzIwMjMtMDEtMTY7IjA0OjM1OjU4ICI7MzsyMjY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tabuada, i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <output expression="&quot;Qual tabuada deseja? &quot;" newline="True"/>
+            <input variable="tabuada"/>
+            <while expression="i&lt;=10">
+                <output expression="tabuada&amp;&quot; x &quot;&amp;i&amp;&quot; = &quot;&amp;tabuada*i" newline="True"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
