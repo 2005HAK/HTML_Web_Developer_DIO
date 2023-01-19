@@ -1,0 +1,62 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+
+header .container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/*Filme principal*/
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url("/Recriando_a_Insterface_da_Netflix/img/Top\ Gun\ Maverick\ Capa.jpg");
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.titulo {
+    font-size: 40px;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 90px;
+}
