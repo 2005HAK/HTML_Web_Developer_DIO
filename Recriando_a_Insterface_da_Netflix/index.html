@@ -19,27 +19,27 @@
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
+            <h2 class="logo">MANGAFLIX</h2>
             <nav>
                 <a href="#">Inicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
+                <a href="#">Mangás</a>
+                <a href="#">Informações</a>
             </nav>
         </div>
     </header>
     <main>
-        <div class="filme-principal">
+        <div id="filme-principal">
             <div class="container">
-                <h3 class="titulo">Top Gun: Maverick</h3>
-                <p class="descricao">Depois de mais de 30 anos de serviço como um dos principais aviadores da Marinha,
-                    Pete "Maverick" Mitchell está de volta, rompendo os limites como um piloto de testes corajoso. No
-                    mundo contemporâneo das guerras tecnológicas, Maverick enfrenta drones e prova que o fator humano
-                    ainda é essencial.</p>
+                <h3 id="titulo">Solo Leveling</h3>
+                <p id="descricao">
+                    Dez anos atrás, depois do “Portal” que conecta o mundo real com um mundo de montros
+                    se abriu, algumas pessoas comuns receberam o poder de caçar os monstros do portal. Eles são
+                    conhecidos como caçadores. Porém, nem todos os caçadores são fortes. Meu nome é Sung Jin-Woo, um caçador de rank E. Eu sou alguém que tem que arriscar a própria vida nas dungeons mais fracas, “O mais fraco do mundo”. Sem ter nenhuma habilidade à disposição, eu mal consigo dinheiro nas dungeons de baixo nível… Ao menos até eu encontrar uma dungeon escondida com a maior dificuldade dentro do Rank D! No fim, enquanto aceitava minha morte, eu ganhei um novo poder.
+                </p>
                 <div class="botoes">
                     <button role="button" class="botao">
                         <i class="fa-solid fa-play"></i>
-                        ASSISTIR AGORA
+                        LEIA AGORA
                     </button>
                     <button role="button" class="botao">
                         <i class="fa-solid fa-circle-info"></i>
@@ -52,37 +52,50 @@
     <div class="carrosel-filmes">
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="box-filme" src="img/Miniaturas/mini1.jpg" alt="miniatura1">
+                <button class="mangas" onclick="muda(1)">
+                    <img class="box-filme" src="img/Miniaturas/mini1.jpg" alt="miniatura1">
+                </button> 
+                <h4 class="nome">Solo Leveling</h4>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/Miniaturas/mini2.jpg" alt="miniatura2">
+                <button class="mangas" onclick="muda(2)">
+                    <img class="box-filme" src="img/Miniaturas/mini2.jpg" alt="miniatura2">
+                </button>     
+                <h4 class="nome">The Begining After The End</h4>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/Miniaturas/mini3.jpg" alt="miniatura3">
+                <button class="mangas" onclick="muda(3)">
+                    <img class="box-filme" src="img/Miniaturas/mini3.jpg" alt="miniatura3">
+                </button>
+                <h4 class="nome">Solo Max Level</h4>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/Miniaturas/mini4.jpg" alt="miniatura4">
+                <button class="mangas" onclick="muda(4)">
+                    <img class="box-filme" src="img/Miniaturas/mini4.jpg" alt="miniatura4">
+                </button>
+                <h4 class="nome">Dimensional Mercenary</h4>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/Miniaturas/mini5.jpg" alt="miniatura5">
+                <button class="mangas" onclick="muda(5)">
+                    <img class="box-filme" src="img/Miniaturas/mini5.jpg" alt="miniatura5">
+                </button>
+                <h4 class="nome">Return Of The Disaster - Class Hero</h4>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/Miniaturas/mini6.jpg" alt="miniatura6">
+                <button class="mangas" onclick="muda(6)">
+                    <img class="box-filme" src="img/Miniaturas/mini6.jpg" alt="miniatura6">
+                </button>
+                <h4 class="nome">One Piece</h4>
             </div>
             <div class="item">
-                <img class="box-filme" src="img/Miniaturas/mini7.jpg" alt="miniatura7">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/Miniaturas/mini8.jpg" alt="miniatura8">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/Miniaturas/mini9.jpg" alt="miniatura9">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="img/Miniaturas/mini10.jpg" alt="miniatura10">
+                <button class="mangas" onclick="muda(7)">
+                    <img class="box-filme" src="img/Miniaturas/mini7.jpg" alt="miniatura7">
+                </button>
+                <h4 class="nome">The World After The Fall</h4>
             </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
     <script src="https://kit.fontawesome.com/bc9d30505a.js"></script>
     <!--Own js-->
     <script src="js/owl/jquery.min.js"></script>

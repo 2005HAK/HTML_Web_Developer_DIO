@@ -21,6 +21,7 @@ header .container {
    display: flex;
    align-items: center;
    justify-content: space-between;
+   padding: 5px 0 5px 0;
 }
 
 header .logo {
@@ -34,17 +35,19 @@ header nav a {
     text-decoration: none;
     color: #AAA;
     margin-right: 10px;
+    padding: 3px;
 }
 
 header nav a:hover {
     color: #fff;
+    border-bottom: 1px solid var(--vermelho);
 }
 
 /*Filme principal*/
 
-.filme-principal {
+#filme-principal {
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url("/Recriando_a_Insterface_da_Netflix/img/Top\ Gun\ Maverick\ Capa.jpg");
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), url("/Recriando_a_Insterface_da_Netflix/img/solo.jpg");
     height: 450px;
     background-size: cover;
     display: flex;
@@ -57,19 +60,19 @@ header nav a:hover {
     margin-left: 20px;
 }
 
-.filme-principal .container {
+#filme-principal .container {
     width: 70%;
 }
 
-.titulo {
-    margin-top: 15%;
+#titulo {
+    margin-top: 5%;
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
-.filme-principal .descricao {
+#descricao {
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 1px;
     text-align: justify;
 }
 
@@ -79,6 +82,7 @@ header nav a:hover {
     color: #ffffff;
     padding: 15px 30px;
     margin-right: 15px;
+    margin-top: 20px;
     font-size: 12px;
     cursor: pointer;
     transition: .3s ease all;
@@ -98,8 +102,26 @@ header nav a:hover {
 .carrosel-filmes {
     margin-top: 5px;
 }
+
 .box-filme {
     height: 100%;
     width: 100%;
     display: block;
+    cursor: pointer;
+    scale: 0.9;
+    transition: .3s ease all;
+}
+
+.box-filme:hover {
+    scale: 1;
+}
+
+.mangas {
+    background-color: transparent;
+    border: none;
+}
+
+.nome {
+    text-align: center;
+    margin: 2px 8px 2px 8px;
 }
